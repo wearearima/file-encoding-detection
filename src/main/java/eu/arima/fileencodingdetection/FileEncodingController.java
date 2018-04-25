@@ -3,8 +3,6 @@ package eu.arima.fileencodingdetection;
 import java.io.IOException;
 import java.nio.charset.Charset;
 
-import javax.validation.constraints.NotBlank;
-
 import org.apache.tika.parser.txt.CharsetDetector;
 import org.apache.tika.parser.txt.CharsetMatch;
 import org.slf4j.Logger;
@@ -68,18 +66,7 @@ public class FileEncodingController {
 
   public static class Form {
 
-    @NotBlank
-    private String name;
-
     private MultipartFile file;
-
-    public void setName(final String name) {
-      this.name = name;
-    }
-
-    public String getName() {
-      return this.name;
-    }
 
     public void setFile(final MultipartFile file) {
       this.file = file;
