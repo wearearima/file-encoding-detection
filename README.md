@@ -2,7 +2,7 @@
 
 This is a Spring Boot application to detect the encoding (or charset) of the uploaded file. 
 
-# Requirememtns
+# Requirements
 
 Spring Boot 2 requires Java 8. 
 
