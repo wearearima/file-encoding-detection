@@ -1,0 +1,19 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+  
+  <div th:if="${detectedCharset}">
+    <p th:text="'Detected charset: ' + ${detectedCharset}">Detected charset</p>
+  </div>
+
+  <form action="#" th:action="@{/fileencoding}" th:object="${form}" method="post" enctype="multipart/form-data">
+    <ul th:if="${#fields.hasErrors('all')}">
+      <li th:each="err : ${#fields.errors('all')}" th:text="${err}">Input is incorrect</li>
+    </ul>
+
+    <p>File to upload:</p>
+    <input type="file" th:field="*{file}" />
+    <p>Name:</p>
+    <input type="text" th:field="*{name}" />
+    <input type="submit" value="Upload" />
+  </form>
+</body>
