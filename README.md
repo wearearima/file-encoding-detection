@@ -21,3 +21,6 @@ To run the application:
 ```
 
 Go to http://localhost:8080 and upload your file. See the logs to check the file has been uploaded correctly.
+
+# Credits
+Created by https://www.arima.eu
