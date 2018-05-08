@@ -1,6 +1,6 @@
 # Introduction
 
-This is a Spring Boot application to detect the encoding (or charset) of the uploaded file. 
+This is a Spring Boot application to find out the encoding (or charset) of the uploaded file. 
 
 # Requirements
 
